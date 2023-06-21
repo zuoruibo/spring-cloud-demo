@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml #后缀名，只支持 properties 和 yaml 类型
+        enable-remote-sync-config: true #启用远程同步配置,
+        timeout: 3000
+        group: DEFAULT_GROUP  #配置组
+        server-addr: 127.0.0.1:8848
+        enabled: true
